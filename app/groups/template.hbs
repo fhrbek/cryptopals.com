@@ -1,0 +1,13 @@
+    {{#bs-dropdown as |dd|}}
+      {{#dd.toggle}}
+        toggle
+      {{/dd.toggle}}
+    {{/bs-dropdown}}
+
+        {{#each foos as |seta|}}
+          {{!-- {{#ddm.item}} --}}
+            {{!-- {{#link-to "foos" seta.id}}
+              #{{seta.id}} - {{seta.name}}
+            {{/link-to}} --}}
+          {{!-- {{/ddm.item}} --}}
+        {{/each}}
