@@ -1,13 +1,10 @@
-    {{#bs-dropdown as |dd|}}
-      {{#dd.toggle}}
-        toggle
-      {{/dd.toggle}}
-    {{/bs-dropdown}}
+{{#bs-dropdown as |dd|}}
+  {{#dd.toggle}}
+    This text should appear only once
+  {{/dd.toggle}}
+{{/bs-dropdown}}
 
-        {{#each foos as |seta|}}
-          {{!-- {{#ddm.item}} --}}
-            {{!-- {{#link-to "foos" seta.id}}
-              #{{seta.id}} - {{seta.name}}
-            {{/link-to}} --}}
-          {{!-- {{/ddm.item}} --}}
-        {{/each}}
+{{#each foos as |foo|}}
+  {{#link-to "bar"}}
+  {{/link-to}}
+{{/each}}
