@@ -1,1 +1,12 @@
-{{outlet}}
+<h1>Hello from my test!</h1>
+
+{{#bs-dropdown as |dd|}}
+  {{#dd.toggle}}
+    This text should appear only once
+  {{/dd.toggle}}
+{{/bs-dropdown}}
+
+{{#each foos as |foo|}}
+  {{#link-to "whatever"}}
+  {{/link-to}}
+{{/each}}
